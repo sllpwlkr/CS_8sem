@@ -21,11 +21,14 @@
 - Macro F1-Score - среднее F1 по классам. Учитывает как precision, так и recall для каждого класса. Пропуск больного листа (низкий recall) так же критичен, как низкий precision.
 - Per-class Precision / Recall - для детального анализа ошибок по каждому заболеванию.
 
-Запуск лабораторной работы осуществляется в google colab. Для загрузки датасета необходимо выполнить команду : 
+Запуск лабораторной работы осуществлялся в google colab. Для загрузки датасета с Kaggle необходимо выполнить команду : 
 
 ```python
 !pip install -q kagglehub
 
+import kagglehub
+
+dataset_path = kagglehub.dataset_download("nirmalsankalana/apple-leaf-disease-dataset")
 ```
 
 Все остальные ячейки можно запускать по очереди.
